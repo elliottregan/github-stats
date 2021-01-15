@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const instance = axios.create({
   baseURL: 'https://api.github.com',
-  headers: {Authorization: `token ${process.env.OAUTH_TOKEN}`}
+  headers: process.env.OAUTH_TOKEN ? {Authorization: `token ${process.env.OAUTH_TOKEN}`} : undefined,
 });
 
 export async function getRepoLangSizes(username:string, repo:string):Promise<any> {
