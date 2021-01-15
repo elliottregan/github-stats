@@ -1,5 +1,5 @@
 {
-  "name": "typescript-tests",
+  "name": "github-stats",
   "private": true,
   "scripts": {
     "dev": "develop",

@@ -1,14 +1,15 @@
 all: run
 
 build:
-	docker build -t typescript-tests .
+	docker build -t github-stats .
 
 run: build
 	docker run --rm -it \
-	--name typescript-tests \
+	--name github-stats \
 	-p 8080:8080 \
 	-v `pwd`:/app \
-	typescript-tests $(c)
+	-v /app/node_modules \
+	github-stats $(c)
 
 develop:
 	make run c="npm run develop"
