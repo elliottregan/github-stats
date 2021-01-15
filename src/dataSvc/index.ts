@@ -23,7 +23,7 @@ export const sortLanguages = (data:Array<LangBytePair>):Array<LangBytePair> => {
 
 export const formatLanguageOutput = (languageData:Array<LangBytePair>) => {
   let output = '';
-  languageData.map(([bytes, lang]) => {
+  languageData.map(([lang, bytes]) => {
     output += `* ${bytes}: ${lang}
 `
   });
