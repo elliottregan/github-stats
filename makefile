@@ -17,4 +17,4 @@ test:
 	make run c="npm run test"
 
 get_user_stats:
-	make run c="npm start $(username)"
+	make run c="npm run get-stats $(username)"
