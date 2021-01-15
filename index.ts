@@ -29,4 +29,3 @@ getUserLanguageStats(user)
   .then(sortLanguages)
   .then(createOutputString)
   .then(createOutputFile);
-
