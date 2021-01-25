@@ -30,3 +30,23 @@ Github limits the number of unauthenticated API calls, and you _may_ hit this li
 1. Create a new OAuth Token on this page: https://github.com/settings/tokens (no special permissions are required)
 2. Duplicate `.env.example` (found in the root of this project) and rename as `.env`
 3. Paste your OAuth Token in place of `GITHUB_OAUTH_TOKEN`
+
+## Testing
+Testing framework provided by Jest. Commands are:
+```
+npm run test
+```
+Develop with tests:
+or
+```
+npm run test:dev
+```
+
+These commands can also be run through Docker with
+```
+make test
+```
+or
+```
+make test_develop
+```
