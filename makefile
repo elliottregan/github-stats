@@ -14,6 +14,9 @@ run: build
 develop:
 	make run c="npm run develop"
 
+test_develop:
+	make run c="npm run test:dev"
+
 test:
 	make run c="npm run test"
 

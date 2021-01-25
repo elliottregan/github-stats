@@ -1,4 +1,4 @@
-type LangBytePair = Array<[string, number]>;
+type LangBytePair = [string, number];
 
 export const mergeLanguages = (data:Array<any>): Array<any> => {
   const langSums = data.reduce((allRepoLangs, repoLangs) => {
